@@ -35,6 +35,9 @@
     </form>
     <div class="message">
       <p>没有账号? <a href="/signup">点击创建</a>.</p>
+      {{if msg}}
+      <p>{{msg}}</p>
+      {{ /if }}
     </div>
   </div>
   <script src="/node_modules/jquery/dist/jquery.js"></script>

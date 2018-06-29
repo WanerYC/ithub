@@ -23,6 +23,6 @@ router.get('/', indexCtrl.showIndex)
     // 渲染注册页面
     .get('/signup', useCtrl.showSignup)
     // 处理注册情趣
-    .get('/signup', useCtrl.handlSignup)
+    .post('/signup', useCtrl.handlSignup)
     // 处理退出请求
     .get('/signout', useCtrl.handlSignout)
